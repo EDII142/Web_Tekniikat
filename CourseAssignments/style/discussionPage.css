@@ -17,6 +17,10 @@ body #container #discussionBackground #messagesBox {
     background-color: #ffc1c1;
     height: 70vh;
     width: 75vw;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 body #container #discussionBackground #chatBox {
@@ -24,5 +28,7 @@ body #container #discussionBackground #chatBox {
     height: 25vh;
     width: 75vw;
 
+    display: flex;
     align-self: flex-end;
+    justify-content: center;
 }
