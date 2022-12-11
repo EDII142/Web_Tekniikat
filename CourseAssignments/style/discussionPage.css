@@ -1,10 +1,28 @@
 body #container {
-    background-color: #d63d3d;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+body #container #discussionBackground {
+    background-color: #ffffff;
+    height: 100vh;
     width: 80vw;
 
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body #container #discussionBackground #messagesBox {
+    background-color: #ffc1c1;
+    height: 70vh;
+    width: 75vw;
+}
+
+body #container #discussionBackground #chatBox {
+    background-color: #ffc1c1;
+    height: 25vh;
+    width: 75vw;
+
+    align-self: flex-end;
 }
