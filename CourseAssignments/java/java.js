@@ -22,6 +22,12 @@ function submitMessage(e) {
 
 // Function of the printing messages onto the screen
 function printMessages() {
+    let messageBox = document.createElement("h1");
+    messageBox.textContent = messageInformation.message;
+    document.body.appendChild(messageBox);
+
+
+    
     for (const messageInformation of AllMessageInformations) {
         console.log(messageInformation.username);
         console.log(messageInformation.message);
