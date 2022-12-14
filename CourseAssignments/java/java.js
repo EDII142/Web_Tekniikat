@@ -18,19 +18,28 @@ function submitMessage(e) {
     AllMessageInformations.push(messageInformation);
     printMessages();
 
-}
+    // Function of the printing messages onto the screen
+    function printMessages() {
+        // Creates the overall div for the message
+        const messageBox = document.createElement("div");
+        const div = document.getElementById("pastMessages");
+        div.appendChild(messageBox);
 
-// Function of the printing messages onto the screen
-function printMessages() {
-    let messageBox = document.createElement("h1");
-    messageBox.textContent = messageInformation.message;
-    document.body.appendChild(messageBox);
+        // Adding username text to the message
+        const messageBoxUsername = document.createElement("h1");
+        const usernameText = document.createTextNode("From: " + messageInformation.username);
+        messageBoxUsername.appendChild(usernameText);
+        div.lastElementChild.appendChild(messageBoxUsername);
 
+        // Adding written text to the message
+        const messageBoxMessage = document.createElement("h1");
+        const messageText = document.createTextNode("Message: " + messageInformation.message);
+        messageBoxMessage.appendChild(messageText);
+        div.lastElementChild.appendChild(messageBoxMessage);
 
-    
-    for (const messageInformation of AllMessageInformations) {
-        console.log(messageInformation.username);
-        console.log(messageInformation.message);
+        // Adds important class if selected
+        if (document.getElementById("checkbox1").checked == true) {
+            div.lastElementChild.classList.add("important");
+        }
     }
-
 }

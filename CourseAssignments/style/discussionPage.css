@@ -14,25 +14,50 @@ body #container>div {
     justify-content: center;
 }
 
+
+
+/* Editing of past messages box starts from here */
 body #container>div>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+
     background-color: #ffc1c1;
     height: 65vh;
     width: 75vw;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    padding: 20px;
 }
 
+body div #pastMessages div {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+body div #pastMessages div h1 {
+    margin: 10px;
+}
+
+body div #pastMessages .important {
+    background-color: #F66E6E;
+    border: 5px solid #ffffff;
+}
+
+body div #pastMessages .important h1 {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+
+
+/* Editing of chatbox starts from here */
 body #container>div>div:nth-child(2) {
     background-color: #ffc1c1;
     height: 30vh;
     width: 75vw;
 }
 
-
-
-/* Editing of chatbox starts from here */
 body #container>div>div:nth-child(2) form {
     display: flex;
     flex-direction: column;
