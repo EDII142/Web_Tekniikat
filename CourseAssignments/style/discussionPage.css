@@ -28,15 +28,20 @@ body #container>div>div:first-child {
     height: 65vh;
     width: 75vw;
     padding: 20px;
+    overflow: hidden;
 }
 
 body div #pastMessages div {
     background-color: #ffffff;
     border-radius: 5px;
+    border: 5px solid #ffffff;
 }
 
 body div #pastMessages div h1 {
+    max-width: 71.7vw;
     margin: 10px;
+    font-size: 1.2em;
+    word-wrap: break-word;
 }
 
 body div #pastMessages .important {
@@ -46,7 +51,7 @@ body div #pastMessages .important {
 
 body div #pastMessages .important h1 {
     color: #FFFFFF;
-    font-weight: bolder;
+    max-width: 71.4vw;
 }
 
 

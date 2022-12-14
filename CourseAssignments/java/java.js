@@ -7,6 +7,12 @@ let form = document.getElementById("messagesForm");
 function submitMessage(e) {
     e.preventDefault();
 
+    // Gives an error if username and/or message field is empty
+    if (document.getElementById("username").value == "" || document.getElementById("message").value == "") {
+        console.log("Error!");
+        return;
+    }
+
     let formData = new FormData(form);
     let username = formData.get("username");
     let message = formData.get("message");
