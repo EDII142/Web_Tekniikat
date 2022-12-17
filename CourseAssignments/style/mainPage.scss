@@ -1,0 +1,41 @@
+$backgroud-color-darkRed: #F66E6E;
+$backgroud-color-pink: #ffc1c1;
+$backgroud-color-white: #ffffff;
+
+@mixin font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: $backgroud-color-white;
+}
+
+
+body #container {
+    display: grid;
+    grid-template-rows:  90vh, 10vh;
+    div {
+        grid-row: 1/2;
+
+        width: 100vw;
+        height: 90vh;
+        background-color: $backgroud-color-darkRed;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        div {
+            width: 60vw;
+            background-color: $backgroud-color-pink;
+            a {
+                @include font;
+            }
+        }
+
+    }
+
+    footer {
+        grid-row: 2/3;
+        height: 10vh;
+    }
+}

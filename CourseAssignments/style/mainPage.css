@@ -1,1 +1,30 @@
+body #container {
+  display: grid;
+  grid-template-rows: 90vh, 10vh;
+}
+body #container div {
+  grid-row: 1/2;
+  width: 100vw;
+  height: 90vh;
+  background-color: #F66E6E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body #container div div {
+  width: 60vw;
+  background-color: #ffc1c1;
+}
+body #container div div a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #ffffff;
+}
+body #container footer {
+  grid-row: 2/3;
+  height: 10vh;
+}
 
+/*# sourceMappingURL=mainPage.css.map */
