@@ -25,7 +25,7 @@ body #container>div>div:first-child {
     gap: 20px;
 
     background-color: #ffc1c1;
-    height: 65vh;
+    height: 60vh;
     width: 75vw;
     padding: 20px;
     overflow: hidden;
@@ -59,7 +59,7 @@ body div #pastMessages .important h1 {
 /* Editing of chatbox starts from here */
 body #container>div>div:nth-child(2) {
     background-color: #ffc1c1;
-    height: 30vh;
+    height: 37vh;
     width: 75vw;
 }
 
@@ -76,7 +76,7 @@ body #container>div>div:nth-child(2) form>* {
 }
 
 body #container>div>div:nth-child(2) form input {
-    width: 7vw;;
+    width: 7vw;
 }
 
 body #container>div>div:nth-child(2) form textarea {

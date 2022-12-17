@@ -26,6 +26,9 @@ function submitMessage(e) {
 
     // Function of the printing messages onto the screen
     function printMessages() {
+        let today = new Date();
+        let currentDate = today.getDate() + "." + today.getMonth() + "." + today.getFullYear();
+
         // Creates the overall div for the message
         const messageBox = document.createElement("div");
         const div = document.getElementById("pastMessages");
@@ -33,13 +36,13 @@ function submitMessage(e) {
 
         // Adding username text to the message
         const messageBoxUsername = document.createElement("h1");
-        const usernameText = document.createTextNode("From: " + messageInformation.username);
+        const usernameText = document.createTextNode(messageInformation.username + " " + currentDate);
         messageBoxUsername.appendChild(usernameText);
         div.lastElementChild.appendChild(messageBoxUsername);
 
         // Adding written text to the message
         const messageBoxMessage = document.createElement("h1");
-        const messageText = document.createTextNode("Message: " + messageInformation.message);
+        const messageText = document.createTextNode(messageInformation.message);
         messageBoxMessage.appendChild(messageText);
         div.lastElementChild.appendChild(messageBoxMessage);
 
