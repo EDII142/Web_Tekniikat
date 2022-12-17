@@ -27,6 +27,10 @@ body #container {
         div {
             width: 60vw;
             background-color: $backgroud-color-pink;
+            h1 {
+                @include font;
+                font-size: 20px * 1.5;
+            }
             a {
                 @include font;
             }

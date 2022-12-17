@@ -16,6 +16,13 @@ body #container div div {
   width: 60vw;
   background-color: #ffc1c1;
 }
+body #container div div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 30px;
+}
 body #container div div a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
