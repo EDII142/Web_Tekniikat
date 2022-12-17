@@ -79,7 +79,7 @@ body #container>div>div:nth-child(2) form input {
     width: 7vw;
 }
 
-body #container>div>div:nth-child(2) form textarea {
+body #container>div>div:nth-child(2) label ~ textarea {
     width: 20vw;
     resize: none;
 }
@@ -89,6 +89,6 @@ body #container>div>div:nth-child(2) form #checkbox1 {
     height: 16px;
 }
 
-body #container>div>div:nth-child(2) form button {
+body #container>div>div:nth-child(2) input + button {
     width: 7vw;
 }

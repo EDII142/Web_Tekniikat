@@ -87,7 +87,7 @@ body footer {
     padding: 20px;
 }
 
-body footer a {
+a[target] {
     text-decoration: none;
     color: #F66E6E;
 }
