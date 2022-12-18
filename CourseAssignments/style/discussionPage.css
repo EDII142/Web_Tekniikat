@@ -92,3 +92,24 @@ body #container>div>div:nth-child(2) form #checkbox1 {
 body #container>div>div:nth-child(2) input + button {
     width: 7vw;
 }
+
+
+
+/* Editing of responsivity starts here */
+@media only screen and (max-width: 1100px) {
+    body #container>div>div:nth-child(2) input + button {
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-height: 1100px) {
+    body #container>div>div:nth-child(2) form textarea  {
+        width: 60vw;
+        height: 8vh;
+    }
+
+    body #container>div>div:nth-child(2) form button {
+        width: 40vw;
+        height: 5vh;
+    }
+}
