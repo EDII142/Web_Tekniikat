@@ -17,6 +17,7 @@ body #container>footer {
 body footer {
     display: flex;
     align-items: center;
+    justify-content: baseline;
 
     padding: 20px;
 }
