@@ -54,12 +54,13 @@ body #container>div:nth-child(3) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
 /* Editing of the images */
 body #container>div img {
-    width: 350px;
+    width: 400px;
+    padding: 5px;
+    padding-left: 18px;
 }
 
 /* Editing of buttons */
