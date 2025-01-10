@@ -1,7 +1,3 @@
 # Web_Tekniikat
 
-Test text
-
-Second commit 
-
-Third commit :)!
+This was part of my studies
